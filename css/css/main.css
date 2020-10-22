@@ -1,0 +1,57 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body
+{
+    background-color: red;
+    margin: auto;
+
+}
+div, p /*Можно применить для нескольких тегов*/
+{
+    display: inline-block;
+    font-size: 24 px;    
+}
+a
+{
+    text-decoration: none;
+    color: darkslategray;
+}
+.some-class
+{
+    background-color: deepskyblue;
+}
+.some-class.some-other-class
+{
+    background-color: greenyellow;
+}
+.font-bold
+{
+    font-weight: bold;    
+}
+
+#uber-span{
+    font-size: 30px;
+}
+
+[type]{
+    width: 300px;
+}
+
+[type="submit"]{
+   background-color: orange;
+}
+
+button:hover
+{
+    background-color: greenyellow;
+}
+
+
+/*
+- селектор по id
+- селектор по другим атрибутам + состояние + псевдоклассы
+- селектор по тегу
+*/

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+*
+{
+    font-family: 'Comfortaa', sans-serif;
+    margin: 5px;
+}
+
+body
+{
+    background: linear-gradient(45deg, #1f2f3d, #0c91cf);
+}
+
+form
+{
+    background-color: ivory;
+    border: 6px double black;
+    width: 630px;
+    margin: auto;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Amatic SC', sans-serif;
+    color: orangered;
+    font-weight: 900;
+}
+img 
+{
+    transition: transform .9s ease-in-out;
+}
+img:hover 
+{
+    transform: rotate(720deg);
+}
+
+button
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+button:hover
+{
+    background-color: #1add21; /* Green */
+}
+
+button:active, 
+button:focus {
+    outline: none;
+}
+
+table 
+{
+    border-collapse: collapse; /* Убирает двойные линии между ячейками */
+}
+td, th 
+{
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid #000; /* Параметры рамки */
+}
+th 
+{
+    background: #6d8d56; 
+    color: #333;
+}
+tbody tr:hover 
+{
+    background: #f7b62c; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+}
+
+/*
+*
+{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body
+{
+    background-color: red;
+}
+div, p
+{
+    display: inline-block;
+    font-size: 24 px;    
+}
+a
+{
+    text-decoration: none;
+    color: darkslategray;
+}
+.some-class
+{
+    background-color: deepskyblue;
+}
+.some-class.some-other-class
+{
+    background-color: greenyellow;
+}
+.font-bold
+{
+    font-weight: bold;    
+}
+
+#uber-span{
+    font-size: 30px;
+}
+
+[type]{
+    width: 300px;
+}
+
+[type="submit"]{
+   background-color: orange;
+}
+
+button:hover
+{
+    background-color: greenyellow;
+}
+*/
+
+/*
+- селектор по id
+- селектор по другим атрибутам + состояние + псевдоклассы
+- селектор по тегу
+*/

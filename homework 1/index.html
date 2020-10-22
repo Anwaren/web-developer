@@ -4,87 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h1>Вакансия: Junior Frontend Developer</h1>
-    <div style="vertical-align: top">   <!-- Слой для группировки тэгов -->
-        <div style="float: left">
-            <img src="img/face.png">
+    <form>
+        <h1>Вакансия: Junior Frontend Developer</h1>
+        <div>   <!-- Слой для группировки тэгов -->
+            <div style="display: inline-block">
+                <img src="img/face.png">
+            </div>
+            <div style="display: inline-block; vertical-align: top">
+                <p>Имя: Пашечко Антон Михайлович</p>
+                <p><a href="https://github.com/Anwaren">Ссылка на репозиторий GitHub</a></p>
+                <p>Опыт работы: секретно</p>
+            </div>
         </div>
-        <div style="float: left; margin-left: 20px;">
-            <p style="margin-top: 0px;">Имя: Пашечко Антон Михайлович</p>
-            <p><a href="https://github.com/Anwaren">Ссылка на репозиторий GitHub</a></p>
-            <p>Опыт работы: секретно</p>
+        <div>
+            <label><b>Дата собеседования:  </b> <input type="date"></label>
         </div>
-    </div>
-    <div style="clear: left; margin-bottom: 10px">
-        <label><b>Дата собеседования:  </b> <input type="date"></label>
-    </div>
-    <div style="margin-bottom: 10px">
-        <b>Уровень английского:</b>
-        <p>
-            <input type="radio" name="english" value="bad" style="margin-left: 0px;"> Плохо
-            <input type="radio" name="english" value="medium"> Средне
-            <input type="radio" name="english" value="good" checked> Хорошо
-            <input type="radio" name="english" value="perfect"> Отлично
-        </p>
-    </div>
-    <div style="margin-bottom: 10px">
-        <b>Ключевые навыки:</b>
-        <ul>
-            <li>C++, Python</li>
-            <li>cmake, gcc, msvc</li>
-            <li>linux, git, jenkins, agile</li>
-            <li>...</li>
-        </ul>
-        <input type="text" name="skill" placeholder="введите навык...">
-        <button type="button">Добавить в список</button>
-    </div>
-    <div style="margin-bottom: 10px">
-        <b>Коммуникабельность:  </b>
-        <select id="sociabilities" name="sociabi">
-            <option value="1">Доминантный</option>
-            <option value="2">Мобильный</option>
-            <option value="3">Ригидный</option>
-            <option value="4">Интровертный</option>
-        </select>
-    </div>
-    <div style="margin-bottom: 10px">
-        <label><b>Желаемая з/п: </b> <input type="text" placeholder="введите значение..."></label>
-    </div>
-    <div style="margin-bottom: 10px">
-        <b>Подходит по критериям: </b>
-        <p>
-            <input type="checkbox" name="en_kn" style="margin-left: 0px;">Знание английского
-            <input type="checkbox" name="price">Оклад
-            <input type="checkbox" name="skills">Навыки
-            <input type="checkbox" name="our_man">Наш человек
-        </p>
-    </div>
-    <div>
-        <b>Образование, курсы и т.п:<b>
-        <table border ="1"> 
-            <tr>
-                <th>#</th>
-                <th>Сроки обучения</th>
-                <th>Наименования учебного заведения, курсов</th> 
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2004-2010</td>
-                <td>СПбГПУ, Програмное обеспецение выч. техники</td>
-            </tr>  
-            <tr>
-                <td>2</td>
-                <td>2010-2020</td>
-                <td>Курсы по C#, C++, Qt, Python</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>2020-н.в.</td>
-                <td>Level Up, Web developer</td>
-            </tr>
-        </table>
-    </div>
+        <div>
+            <label></label><b>Уровень английского:</b></label>
+            <p>
+                <input type="radio" name="english" value="bad"> Плохо
+                <input type="radio" name="english" value="medium"> Средне
+                <input type="radio" name="english" value="good" checked> Хорошо
+                <input type="radio" name="english" value="perfect"> Отлично
+            </p>
+        </div>
+        <div>
+            <b>Ключевые навыки:</b>
+            <ul>
+                <li>C++, Python</li>
+                <li>cmake, gcc, msvc</li>
+                <li>linux, git, jenkins, agile</li>
+                <li>...</li>
+            </ul>
+            <input type="text" name="skill" placeholder="введите навык...">
+            <button type="button">Добавить в список</button>
+        </div>
+        <div>
+            <b>Коммуникабельность:  </b>
+            <select id="sociabilities" name="sociabi">
+                <option value="1">Доминантный</option>
+                <option value="2">Мобильный</option>
+                <option value="3">Ригидный</option>
+                <option value="4">Интровертный</option>
+            </select>
+        </div>
+        <div>
+            <label><b>Желаемая з/п: </b> <input type="number" placeholder="введите значение..."></label>
+        </div>
+        <div>
+            <b>Подходит по критериям: </b>
+            <p>
+                <input id="en_kn"type="checkbox" name="en_kn>
+                <label for="en_kn">Знание английского</label>
+                <input type="checkbox" name="price">Оклад
+                <input type="checkbox" name="skills">Навыки
+                <input type="checkbox" name="our_man">Наш человек
+            </p>
+        </div>
+        <div>
+            <b>Образование, курсы и т.п:<b>
+            <table border ="1"> 
+                <tr>
+                    <th>#</th>
+                    <th>Сроки обучения</th>
+                    <th>Наименования учебного заведения, курсов</th> 
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2004-2010</td>
+                        <td>СПбГПУ, Програмное обеспецение выч. техники</td>
+                    </tr>  
+                    <tr>
+                        <td>2</td>
+                        <td>2010-2020</td>
+                        <td>Курсы по C#, C++, Qt, Python</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2020-н.в.</td>
+                        <td>Level Up, Web developer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    
 </body>
 </html>
