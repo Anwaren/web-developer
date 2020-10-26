@@ -1,0 +1,101 @@
+.main-div
+{
+    height: 600px;
+    width: 800px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+button.close
+{
+    background-color: transparent; 
+    border: none; 
+    display: flex;
+}
+
+button.close:active, 
+button.close:focus {
+    outline: none;
+}
+
+.header-div
+{
+    height: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(189, 209, 228);  
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.header-div-info
+{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.body-div
+{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.message-div
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.message-info-div
+{
+    display: flex;
+    justify-content: flex-end;
+
+    background-color: rgb(117, 149, 179); ;
+    
+    padding: 20px;
+    box-sizing: border-box;
+    width: 150px;
+    align-items: center;
+}
+
+.message-time-div
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.circle-div 
+{
+    width: 50px; 
+    height: 50px;
+    background: rgb(189, 209, 228); 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.message-data
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 20px;
+    border-left: 1px solid black;
+}
+
+.message
+{
+    border: 1px solid black;
+    padding: 2px;
+    background: rgb(153, 196, 236); 
+}

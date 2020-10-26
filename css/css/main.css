@@ -5,13 +5,12 @@
 }
 body
 {
-    background-color: red;
+    background-color: rgb(248, 174, 174);
     margin: auto;
 
 }
 div, p /*Можно применить для нескольких тегов*/
 {
-    display: inline-block;
     font-size: 24 px;    
 }
 a

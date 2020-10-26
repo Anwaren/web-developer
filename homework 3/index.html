@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="header-div">
+            <div class="header-div-info">
+               <h2 style="margin: 0;">Discussion topic: What about Bill?</h2>
+               <p style="margin: 0;">Created by: Anton  Created on 14:41 26.10.2020</p>
+            </div>
+            <button class="close">X</button>
+        </div>
+        <div class="body-div">
+            <div class="message-div">
+                <div class="message-info-div">
+                    <div class="circle-div">
+                        AE
+                    </div>
+                    <div class="message-time-div">
+                        <p style="margin: 0;">26.10.20</p>
+                        <p style="margin: 0;">17:50:00</p>
+                    </div>
+                </div>
+                <div class="message-data">
+                    <p style="margin: 0;">Anton Efremenkov:</p>
+                    <div class="message">
+                        Если вы прочли раздел 1 . 1 о выводе типов шаблонов, вы знаете почти все, что следует знать о выводе типа auto, поскольку за одним любопытным исключением вывод типа auto представляет собой вывод типа шаблона.
+                    </div>
+                </div>
+            </div>
+            <div class="message-div">
+                <div class="message-info-div">
+                    <div class="circle-div">
+                        TR
+                    </div>
+                    <div class="message-time-div">
+                        <p style="margin: 0;">26.10.20</p>
+                        <p style="margin: 0;">17:51:18</p>
+                    </div>
+                </div>
+                <div class="message-data">
+                    <p style="margin: 0;">True Rigth:</p>
+                    <div class="message">
+                        Но как это может быть? Вывод типа шаблона работает с шаблонами, функциями и параметрами, а auto не имеет дела ни с одной из этих сущностей.
+                    </div>
+                </div>
+            </div>
+            <div class="message-div">
+                <div class="message-info-div">
+                    <div class="circle-div">
+                        KK
+                    </div>
+                    <div class="message-time-div">
+                        <p style="margin: 0;">26.10.20</p>
+                        <p style="margin: 0;">17:51:26</p>
+                    </div>
+                </div>
+                <div class="message-data">
+                    <p style="margin: 0;">Kirill Kombarov:</p>
+                    <div class="message">
+                        Да, это так, но это не имеет значения. Существует прямая взаимосвязь между выводом типа шаблона и выводом типа auto. Существует буквальное алгоритмическое преобразование одного в другой.
+                    </div>
+                </div>
+            </div>
+            <div class="message-div">
+                <div class="message-info-div">
+                    <div class="circle-div">
+                        TR
+                    </div>
+                    <div class="message-time-div">
+                        <p style="margin: 0;">26.10.20</p>
+                        <p style="margin: 0;">18:20:00</p>
+                    </div>
+                </div>
+                <div class="message-data">
+                    <p style="margin: 0;">True Rigth:</p>
+                    <div class="message">
+                        В разделе 1 . 1 вывод типа шаблона пояснялся с использованием обобщенного шаблона функции 
+                    </div>
+                </div>
+            </div>
+            <div class="message-div">
+                <div class="message-info-div">
+                    <div class="circle-div">
+                        KK
+                    </div>
+                    <div class="message-time-div">
+                        <p style="margin: 0;">26.10.20</p>
+                        <p style="margin: 0;">18:21:07</p>
+                    </div>
+                </div>
+                <div class="message-data">
+                    <p style="margin: 0;">Kirill Kombarov:</p>
+                    <div class="message">
+                        Когда переменная объявлена с использованием ключевого слова auto, оно играет роль Т в шаблоне, а спецификатор типа переменной действует как ParamType. Это проще показать, чем описать, так что рассмотрим следующий пример: auto х = 27;
+                    </div>
+                </div>
+            </div>
+            <div class="message-div">
+                <div class="message-info-div">
+                    <div class="circle-div">
+                        TR
+                    </div>
+                    <div class="message-time-div">
+                        <p style="margin: 0;">26.10.20</p>
+                        <p style="margin: 0;">18:25:04</p>
+                    </div>
+                </div>
+                <div class="message-data">
+                    <p style="margin: 0;">True Rigth:</p>
+                    <div class="message">
+                        Здесь спецификатором типа для х является auto само по себе. С другой стороны, в объявлении const auto сх = х ; спецификатором типа является const auto. А в объявлении const auto& rx = х;
+                    </div>
+                </div>
+            </div>
+            <div class="message-div">
+                <div class="message-info-div">
+                    <div class="circle-div">
+                        AE
+                    </div>
+                    <div class="message-time-div">
+                        <p style="margin: 0;">26.10.20</p>
+                        <p style="margin: 0;">18:43:44</p>
+                    </div>
+                </div>
+                <div class="message-data">
+                    <p style="margin: 0;">Alexey Elemyanov:</p>
+                    <div class="message">
+                        Как я уже говорил, вывод типов для auto представляет собой (с одним исключением, которое мы вскоре рассмотрим) то же самое, что и вывод типов для шаблонов. 
+                    </div>
+                </div>
+            </div>
+            <div class="message-div">
+                <div class="message-info-div">
+                    <div class="circle-div">
+                        KK
+                    </div>
+                    <div class="message-time-div">
+                        <p style="margin: 0;">26.10.20</p>
+                        <p style="margin: 0;">18:51:00</p>
+                    </div>
+                </div>
+                <div class="message-data">
+                    <p style="margin: 0;">Kirill Kombarov:</p>
+                    <div class="message">
+                        В разделе l . l вывод типов шаблонов был разделен на три случая, основанных на характеристиках ParamType, спецификаторе типа param в обобщенном шаблоне функции. В объявлении переменной с использованием auto спецификатор типа занимает место ParamType, так что у нас опять имеются три случая.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
